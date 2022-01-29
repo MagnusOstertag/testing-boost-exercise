@@ -22,8 +22,7 @@ jobs:
       - name: "Create build dir"
         run: mkdir build 
       - name: "Change to build dir" 
-        run: cd build/
-        working-directory: build
+        run: cd build
       - name: "Debug folder"
         run: dir
       - name: "CMake"
@@ -54,7 +53,6 @@ jobs:
       - name: "Unzip build artifact"
         run: tar -xf build.tar
       - name: "Change to build dir" 
-        run: cd build/
-        working-directory: build
+        run: cd build
       - name: "Run tests"
         run: make test
