@@ -21,6 +21,8 @@ jobs:
         run: sudo apt install cmake libeigen3-dev libyaml-cpp-dev
       - name: "Create build dir"
         run: mkdir build && cd build
+      - name: "Debug"
+        run: cmake --help && ls && ls / && dir
       - name: "CMake"
         run: cmake ..
       - name: "Make source code"
